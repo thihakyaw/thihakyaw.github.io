@@ -9,7 +9,7 @@ export default function Hero({ data }: HeroProps) {
 
   return (
     <section id="hero" className="py-12 border-b border-paper-border dark:border-terminal-border">
-      <div className="mb-2 text-xs text-paper-border dark:text-terminal-border">
+      <div className="mb-2 text-xs text-paper-muted dark:text-terminal-muted">
         <span className="text-paper-green dark:text-terminal-green">thihakyaw@portfolio</span>
         <span>:</span>
         <span className="text-paper-amber dark:text-terminal-amber">~</span>
@@ -20,7 +20,7 @@ export default function Hero({ data }: HeroProps) {
         {name}
       </h1>
       <p className="text-paper-amber dark:text-terminal-amber text-sm mb-1">{title}</p>
-      <p className="text-xs text-paper-border dark:text-terminal-border mb-6">{location}</p>
+      <p className="text-xs text-paper-muted dark:text-terminal-muted mb-6">{location}</p>
 
       <div className="flex flex-wrap gap-4 text-xs">
         <a

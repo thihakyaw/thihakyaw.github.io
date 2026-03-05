@@ -14,6 +14,7 @@ export default {
           green: '#00ff41',
           amber: '#fbbf24',
           border: '#2a2a2a',
+          muted: '#6b7280',
         },
         paper: {
           bg: '#f5f0e8',
@@ -21,6 +22,7 @@ export default {
           green: '#2d7a2d',
           amber: '#92400e',
           border: '#c5bfb0',
+          muted: '#6b7280',
         },
       },
     },

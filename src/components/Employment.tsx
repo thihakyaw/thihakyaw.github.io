@@ -34,12 +34,12 @@ function JobCard({ job }: { job: EmploymentType }) {
             )}
             <span className="text-paper-text dark:text-terminal-text text-sm"> / {job.role}</span>
           </div>
-          <div className="flex items-center gap-2 text-xs text-paper-border dark:text-terminal-border">
+          <div className="flex items-center gap-2 text-xs text-paper-muted dark:text-terminal-muted">
             <span>{job.period}</span>
             <span className="text-paper-green dark:text-terminal-green">{open ? '[-]' : '[+]'}</span>
           </div>
         </div>
-        <div className="text-xs text-paper-border dark:text-terminal-border mt-0.5">{job.location}</div>
+        <div className="text-xs text-paper-muted dark:text-terminal-muted mt-0.5">{job.location}</div>
       </button>
 
       {open && (

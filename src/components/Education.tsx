@@ -17,9 +17,9 @@ export default function Education({ education, awards }: EducationProps) {
                 <span className="font-bold text-paper-green dark:text-terminal-green">{edu.institution}</span>
                 <span className="text-paper-text dark:text-terminal-text"> / {edu.degree}</span>
               </div>
-              <span className="text-xs text-paper-border dark:text-terminal-border">{edu.period}</span>
+              <span className="text-xs text-paper-muted dark:text-terminal-muted">{edu.period}</span>
             </div>
-            <div className="text-xs text-paper-border dark:text-terminal-border mt-0.5">{edu.location}</div>
+            <div className="text-xs text-paper-muted dark:text-terminal-muted mt-0.5">{edu.location}</div>
             {edu.honor && (
               <div className="text-xs text-paper-amber dark:text-terminal-amber mt-1">{edu.honor}</div>
             )}
@@ -32,7 +32,7 @@ export default function Education({ education, awards }: EducationProps) {
         {awards.map(award => (
           <div key={award.title} className="retro-card text-sm">
             <div className="font-bold text-paper-amber dark:text-terminal-amber">{award.title}</div>
-            <div className="text-xs text-paper-border dark:text-terminal-border mt-0.5">
+            <div className="text-xs text-paper-muted dark:text-terminal-muted mt-0.5">
               {award.institution} · {award.period}
             </div>
           </div>

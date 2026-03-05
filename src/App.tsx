@@ -29,7 +29,7 @@ function App() {
         <Employment data={cvData.employment} />
         <Education education={cvData.education} awards={cvData.awards} />
       </main>
-      <footer className="text-center py-6 text-xs text-paper-border dark:text-terminal-border border-t border-paper-border dark:border-terminal-border">
+      <footer className="text-center py-6 text-xs text-paper-muted dark:text-terminal-muted border-t border-paper-border dark:border-terminal-border">
         <span className="text-paper-green dark:text-terminal-green">{'>'}</span> {cvData.name} © {new Date().getFullYear()}
       </footer>
     </div>
