@@ -27,7 +27,8 @@
     { "name": "Git", "icon": "git" },
     { "name": "AWS", "icon": "aws" },
     { "name": "Docker", "icon": "docker" },
-    { "name": "Digital Ocean", "icon": "digitalocean" }
+    { "name": "Digital Ocean", "icon": "digitalocean" },
+    { "name": "AI-Assisted Dev (Claude Code)", "icon": "claude" }
   ],
   "employment": [
     {

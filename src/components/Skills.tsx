@@ -19,6 +19,7 @@ const ICON_MAP: Record<string, string> = {
   aws: '/icons/amazonwebservices-plain-wordmark.svg',
   docker: '/icons/docker-plain.svg',
   digitalocean: '/icons/digitalocean-original.svg',
+  claude: '/icons/claude.svg',
 }
 
 export default function Skills({ data }: SkillsProps) {
