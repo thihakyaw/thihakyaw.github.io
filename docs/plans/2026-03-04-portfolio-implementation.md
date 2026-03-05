@@ -2,7 +2,7 @@
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-**Goal:** Build a single-page retro-style portfolio website for Thiha Kyaw, deployed to https://thihakyaw.github.io, with a CV-driven update flow.
+**Goal:** Build a single-page retro-style portfolio website, deployed to GitHub Pages, with a CV-driven update flow.
 
 **Architecture:** Vite + React + TypeScript + Tailwind CSS single-page app. All CV content lives in `src/data/cv.json`. A Node.js script (`scripts/update-cv.js`) reads a local PDF and uses the Claude API to regenerate `cv.json`. A Claude skill automates the update workflow. Deployed via `gh-pages`.
 
@@ -20,7 +20,7 @@
 **Step 1: Scaffold with Vite**
 
 ```bash
-cd /Users/meowfitchoo/code/thihakyaw-portfolio
+cd /path/to/your-portfolio
 npm create vite@latest . -- --template react-ts
 ```
 Select "React" → "TypeScript" if prompted. Answer "yes" to overwrite if asked about existing files.
@@ -184,18 +184,18 @@ Create `src/data/cv.json` with this exact content (populated from the CV PDF):
 
 ```json
 {
-  "name": "Thiha Kyaw",
-  "title": "Software Engineer / Backend Engineer",
-  "location": "Bangkok, Thailand",
+  "name": "Your Name",
+  "title": "Your Title",
+  "location": "Your Location",
   "contact": {
-    "email": "thihakyaw.dev@gmail.com",
-    "github": "https://github.com/thihakyaw",
-    "linkedin": "https://www.linkedin.com/in/thiha-kyaw"
+    "email": "your@email.com",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://www.linkedin.com/in/yourusername"
   },
   "summary": [
-    "A software engineer with six years of experience as a Backend Engineer who transitioned to a Full-stack Engineer role two years ago, currently based in Bangkok.",
-    "Experienced in developing high-performance APIs with scalable, low-resource-consumption code that runs reliably. I have worked as a backend engineer in Bulk SMS services, Social Media, Automobile, Insurance, AdTech, and E-commerce platforms, and I am currently working as a full-stack engineer at a company that specializes in artificial intelligence (AI), data science, and digital transformation solutions for businesses.",
-    "I primarily use PHP and JavaScript and am experienced in adapting to new programming languages and technology stacks."
+    "Summary paragraph 1.",
+    "Summary paragraph 2.",
+    "Summary paragraph 3."
   ],
   "skills": [
     { "name": "Laravel", "icon": "laravel" },
@@ -216,106 +216,15 @@ Create `src/data/cv.json` with this exact content (populated from the CV PDF):
   ],
   "employment": [
     {
-      "company": "Sertis",
-      "role": "Full-stack Engineer",
-      "period": "Nov 2023 – Present",
-      "location": "Bangkok",
-      "url": "https://www.sertiscorp.com/",
+      "company": "Company Name",
+      "role": "Your Role",
+      "period": "Mon YYYY – Present",
+      "location": "City",
+      "url": "https://company.com",
       "projects": [
         {
-          "name": "Renewable Energy Acceleration Platform",
-          "description": "Digital marketplace for renewable energy services and green energy certificates. Enabled businesses, investors, and producers to engage with clean energy projects efficiently. Focused on streamlined transactions and structured project workflows.",
-          "url": null
-        },
-        {
-          "name": "Sertis Careers Website",
-          "description": "Company career portal for managing job postings and applications. Improved recruitment workflows and candidate experience. Implemented responsive UI, secure authentication, and structured applicant data management.",
-          "url": "https://careers.sertiscorp.com"
-        },
-        {
-          "name": "Recruitis",
-          "description": "Recruitment platform for job posting and applicant tracking. Delivered modern UX with optimized performance. Supported hiring workflows for growing organizations.",
-          "url": "https://recruitis.tech"
-        },
-        {
-          "name": "Renewable Energy Trading Platform",
-          "description": "Maintained and enhanced a mission-critical core trading feature. Ensured compatibility with existing architecture and optimized performance. Handled production stability, bug fixes, and cross-team deployments.",
-          "url": null
-        },
-        {
-          "name": "Knowledge Management AI Chatbot",
-          "description": "AI-powered chatbot for retrieving documents and internal knowledge via natural language. Integrated LLM services with document retrieval systems. Improved response accuracy, scalability, and system performance.",
-          "url": null
-        }
-      ]
-    },
-    {
-      "company": "BrikL",
-      "role": "Backend Engineer",
-      "period": "Nov 2022 – Oct 2023",
-      "location": "Bangkok",
-      "url": "https://brikl.com",
-      "projects": [
-        {
-          "name": "BrikL E-commerce Platform",
-          "description": "Responsible for developing and maintaining e-commerce services for the BrikL platform. Contributed to backend platform improvements, optimizations, and feature enhancements to ensure scalability and reliability.",
-          "url": "https://brikl.com"
-        }
-      ]
-    },
-    {
-      "company": "ReverseAds",
-      "role": "Backend Engineer",
-      "period": "May 2022 – Nov 2022",
-      "location": "Bangkok",
-      "url": null,
-      "projects": [
-        {
-          "name": "Keyword App",
-          "description": "The ReverseAds Keyword web app provides keyword and competitive research tools to help optimize advertising campaign targeting. Contributed to the development and maintenance of core features, ensuring reliable performance and accurate data processing.",
-          "url": "https://keyword.reverseads.io"
-        }
-      ]
-    },
-    {
-      "company": "Carro",
-      "role": "Backend Engineer",
-      "period": "Aug 2020 – May 2022",
-      "location": "Yangon / Bangkok",
-      "url": null,
-      "projects": [
-        {
-          "name": "Carro Ask",
-          "description": "Ask & Answer Auto Questions is a forum platform by Carro for car-related discussions. Contributed as a Backend Engineer, developing and maintaining core backend features.",
-          "url": "https://ask.carro.sg"
-        },
-        {
-          "name": "Carro Anywhere",
-          "description": "Singapore's first contactless car showroom. Responsible for WebSocket-related development, including setting up WebSocket servers and integrating real-time communication features.",
-          "url": "https://carro.sg/anywhere"
-        },
-        {
-          "name": "Covered",
-          "description": "A usage-based car insurance and maintenance platform. Led backend development, heavily involved in integrating insurance vendor APIs for quoting, subscription, and payment processing. Communicated directly with insurance vendors for new feature integrations.",
-          "url": "https://covered.sg"
-        }
-      ]
-    },
-    {
-      "company": "L-Future",
-      "role": "Web Developer",
-      "period": "Sep 2019 – Jul 2020",
-      "location": "Mandalay",
-      "url": null,
-      "projects": [
-        {
-          "name": "TripleSMS",
-          "description": "A bulk SMS service provider in Myanmar. Handled system refactoring and improved the design flow to support multiple SMS vendors.",
-          "url": "https://triplesms.com"
-        },
-        {
-          "name": "Food Delivery CMS",
-          "description": "Food delivery CMS built from scratch using Sailsjs.",
+          "name": "Project Name",
+          "description": "Project description.",
           "url": null
         }
       ]
@@ -323,33 +232,19 @@ Create `src/data/cv.json` with this exact content (populated from the CV PDF):
   ],
   "education": [
     {
-      "institution": "University Of Greenwich",
-      "degree": "Business Information Technology",
-      "period": "Dec 2016 – Dec 2017",
-      "location": "Mandalay",
+      "institution": "University Name",
+      "degree": "Degree Name",
+      "period": "Mon YYYY – Mon YYYY",
+      "location": "City",
       "honor": "First Class Honors"
-    },
-    {
-      "institution": "NCC Education",
-      "degree": "Level 5 Diploma in Computing",
-      "period": "Jun 2015 – Jun 2016",
-      "location": "Mandalay",
-      "honor": null
-    },
-    {
-      "institution": "NCC Education",
-      "degree": "Level 4 Diploma in Computing",
-      "period": "Jun 2014 – Jun 2015",
-      "location": "Mandalay",
-      "honor": null
     }
   ],
   "awards": [
     {
-      "title": "First Class Honors in Business Information Technology",
-      "institution": "University Of Greenwich",
-      "period": "Dec 2016 – Dec 2017",
-      "location": "Mandalay"
+      "title": "Award Title",
+      "institution": "Institution Name",
+      "period": "Mon YYYY – Mon YYYY",
+      "location": "City"
     }
   ]
 }
@@ -520,7 +415,7 @@ export default function Nav({ dark, onToggle }: NavProps) {
     <nav className="sticky top-0 z-50 bg-paper-bg dark:bg-terminal-bg border-b border-paper-border dark:border-terminal-border">
       <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
         <span className="text-paper-green dark:text-terminal-green font-bold text-sm">
-          <span className="opacity-60">~/</span>thihakyaw
+          <span className="opacity-60">~/</span>username
         </span>
 
         <div className="flex items-center gap-4">
@@ -573,7 +468,7 @@ export default function Hero({ data }: HeroProps) {
   return (
     <section id="hero" className="py-12 border-b border-paper-border dark:border-terminal-border">
       <div className="mb-2 text-xs text-paper-border dark:text-terminal-border">
-        <span className="text-paper-green dark:text-terminal-green">thihakyaw@portfolio</span>
+        <span className="text-paper-green dark:text-terminal-green">username@portfolio</span>
         <span>:</span>
         <span className="text-paper-amber dark:text-terminal-amber">~</span>
         <span>$</span>
@@ -1164,7 +1059,7 @@ npm run deploy
 ```
 
 This builds the site and pushes to the `gh-pages` branch.
-Live at: https://thihakyaw.github.io
+Live at: https://yourusername.github.io
 
 ## Notes
 
@@ -1202,13 +1097,13 @@ The `deploy` script should be: `"deploy": "vite build && gh-pages -d dist"`
 Also add `homepage` field to `package.json`:
 ```json
 {
-  "homepage": "https://thihakyaw.github.io"
+  "homepage": "https://yourusername.github.io"
 }
 ```
 
 **Step 3: Set `vite.config.ts` base**
 
-For a user/org GitHub Pages site (`thihakyaw.github.io`), base should be `/`:
+For a user/org GitHub Pages site (`yourusername.github.io`), base should be `/`:
 ```ts
 export default defineConfig({
   plugins: [react()],
@@ -1219,16 +1114,16 @@ export default defineConfig({
 **Step 4: Initialize GitHub remote**
 
 ```bash
-git remote add origin https://github.com/thihakyaw/thihakyaw.github.io.git
+git remote add origin https://github.com/yourusername/yourusername.github.io.git
 ```
-(Create the repo on GitHub first if it doesn't exist — must be named `thihakyaw.github.io` for user site)
+(Create the repo on GitHub first if it doesn't exist — must be named `yourusername.github.io` for user site)
 
 **Step 5: First deploy**
 
 ```bash
 npm run deploy
 ```
-Expected: Site builds, `gh-pages` branch pushed to GitHub, live at `https://thihakyaw.github.io`.
+Expected: Site builds, `gh-pages` branch pushed to GitHub, live at `https://yourusername.github.io`.
 
 **Step 6: Final commit of any remaining changes**
 
@@ -1243,7 +1138,7 @@ git push -u origin main
 ## Task 15: Save project info to Claude memory
 
 **Files:**
-- Create: `/Users/meowfitchoo/.claude/projects/-Users-meowfitchoo-code-thihakyaw-portfolio/memory/MEMORY.md`
+- Create: `~/.claude/projects/<your-project-path>/memory/MEMORY.md`
 
 **Step 1: Write memory file**
 
@@ -1251,7 +1146,7 @@ git push -u origin main
 # Portfolio Project Memory
 
 ## Project
-- Thiha Kyaw portfolio — deployed to https://thihakyaw.github.io
+- Portfolio — deployed to https://yourusername.github.io
 - Stack: Vite + React + TypeScript + Tailwind CSS
 - Font: JetBrains Mono
 - Style: Retro terminal aesthetic, dark/light mode
@@ -1269,9 +1164,9 @@ git push -u origin main
 4. `npm run deploy`
 
 ## Deployment
-- GitHub Pages user site: https://thihakyaw.github.io
+- GitHub Pages user site: https://yourusername.github.io
 - Deploy: `npm run deploy` → vite build → gh-pages -d dist
-- Repo: https://github.com/thihakyaw/thihakyaw.github.io
+- Repo: https://github.com/yourusername/yourusername.github.io
 
 ## Constraints
 - NO phone number anywhere
