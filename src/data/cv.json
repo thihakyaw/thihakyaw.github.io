@@ -10,25 +10,73 @@
   "summary": [
     "A software engineer with six years of experience as a Backend Engineer who transitioned to a Full-stack Engineer role two years ago, currently based in Bangkok.",
     "Experienced in developing high-performance APIs with scalable, low-resource-consumption code that runs reliably. I have worked as a backend engineer in Bulk SMS services, Social Media, Automobile, Insurance, AdTech, and E-commerce platforms, and I am currently working as a full-stack engineer at a company that specializes in artificial intelligence (AI), data science, and digital transformation solutions for businesses.",
-    "I primarily use PHP and JavaScript and am experienced in adapting to new programming languages and technology stacks."
+    "I primarily use PHP and JavaScript. I am experienced in adapting to new programming languages and technology stacks."
   ],
   "skills": [
-    { "name": "Laravel", "icon": "laravel" },
-    { "name": "PHP", "icon": "php" },
-    { "name": "NodeJS", "icon": "nodejs" },
-    { "name": "JavaScript", "icon": "javascript" },
-    { "name": "TypeScript", "icon": "typescript" },
-    { "name": "MySQL", "icon": "mysql" },
-    { "name": "PostgreSQL", "icon": "postgresql" },
-    { "name": "MongoDB", "icon": "mongodb" },
-    { "name": "REST API", "icon": null },
-    { "name": "GraphQL", "icon": "graphql" },
-    { "name": "Linux", "icon": "linux" },
-    { "name": "Git", "icon": "git" },
-    { "name": "AWS", "icon": "aws" },
-    { "name": "Docker", "icon": "docker" },
-    { "name": "Digital Ocean", "icon": "digitalocean" },
-    { "name": "AI-Assisted Dev (Claude Code)", "icon": "claude" }
+    {
+      "name": "Laravel",
+      "icon": "laravel"
+    },
+    {
+      "name": "PHP",
+      "icon": "php"
+    },
+    {
+      "name": "NodeJS",
+      "icon": "nodejs"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript"
+    },
+    {
+      "name": "MySQL",
+      "icon": "mysql"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "postgresql"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "mongodb"
+    },
+    {
+      "name": "REST API",
+      "icon": null
+    },
+    {
+      "name": "GraphQL",
+      "icon": "graphql"
+    },
+    {
+      "name": "Linux",
+      "icon": "linux"
+    },
+    {
+      "name": "Git",
+      "icon": "git"
+    },
+    {
+      "name": "AWS",
+      "icon": "aws"
+    },
+    {
+      "name": "Docker",
+      "icon": "docker"
+    },
+    {
+      "name": "Digital Ocean",
+      "icon": "digitalocean"
+    },
+    {
+      "name": "AI-Assisted Dev (Claude Code)",
+      "icon": "claude"
+    }
   ],
   "employment": [
     {
