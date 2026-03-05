@@ -2,7 +2,7 @@
 
 ## Overview
 
-A single-page portfolio website for Thiha Kyaw, deployed to `https://thihakyaw.github.io`.
+A single-page portfolio website deployed to GitHub Pages.
 Built with Vite + React + TypeScript + Tailwind CSS. Retro terminal aesthetic with dark/light mode.
 
 ## Stack
@@ -10,13 +10,13 @@ Built with Vite + React + TypeScript + Tailwind CSS. Retro terminal aesthetic wi
 - **Framework:** Vite + React + TypeScript
 - **Styling:** Tailwind CSS
 - **Font:** JetBrains Mono (Google Fonts)
-- **Deployment:** `gh-pages` npm package → `https://thihakyaw.github.io`
+- **Deployment:** `gh-pages` npm package → `https://yourusername.github.io`
 - **Icons:** SVG-first (Devicons), PNG fallback, resized for performance
 
 ## Project Structure
 
 ```
-thihakyaw-portfolio/
+your-portfolio/
 ├── src/
 │   ├── components/
 │   │   ├── Nav.tsx           # Sticky nav with section anchors + dark/light toggle
@@ -80,43 +80,42 @@ All content driven from `src/data/cv.json`. Sections rendered top-to-bottom:
 
 ```json
 {
-  "name": "Thiha Kyaw",
-  "title": "Software Engineer / Backend Engineer",
-  "location": "Bangkok, Thailand",
+  "name": "Your Name",
+  "title": "Your Title",
+  "location": "Your Location",
   "contact": {
-    "email": "thihakyaw.dev@gmail.com",
-    "github": "https://github.com/thihakyaw",
-    "linkedin": "https://www.linkedin.com/in/thiha-kyaw"
+    "email": "your@email.com",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://www.linkedin.com/in/yourusername"
   },
   "summary": ["paragraph 1", "paragraph 2", "paragraph 3"],
-  "skills": ["Laravel", "PHP", "NodeJS", "JavaScript", "TypeScript", "MySQL", "PostgreSQL", "MongoDB", "REST API", "GraphQL", "Linux", "Git", "AWS", "Docker"],
+  "skills": [{ "name": "Skill Name", "icon": "icon-key or null" }],
   "employment": [
     {
-      "company": "Sertis",
-      "role": "Full-stack Engineer",
-      "period": "Nov 2023 – Present",
-      "location": "Bangkok",
-      "url": "https://www.sertiscorp.com/",
+      "company": "Company Name",
+      "role": "Your Role",
+      "period": "Mon YYYY – Present",
+      "location": "City",
+      "url": "https://company.com",
       "projects": [
-        { "name": "Renewable Energy Acceleration Platform", "description": "...", "url": null },
-        { "name": "Sertis Careers Website", "description": "...", "url": "https://careers.sertiscorp.com" }
+        { "name": "Project Name", "description": "...", "url": null }
       ]
     }
   ],
   "education": [
     {
-      "institution": "University Of Greenwich",
-      "degree": "Business Information Technology",
-      "period": "Dec 2016 – Dec 2017",
-      "location": "Mandalay",
+      "institution": "University Name",
+      "degree": "Degree Name",
+      "period": "Mon YYYY – Mon YYYY",
+      "location": "City",
       "honor": "First Class Honors"
     }
   ],
   "awards": [
     {
-      "title": "First Class Honors in Business Information Technology",
-      "institution": "University Of Greenwich",
-      "period": "Dec 2016 – Dec 2017"
+      "title": "Award Title",
+      "institution": "Institution Name",
+      "period": "Mon YYYY – Mon YYYY"
     }
   ]
 }
