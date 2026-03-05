@@ -6,7 +6,7 @@ interface EmploymentProps {
 }
 
 function JobCard({ job }: { job: EmploymentType }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   return (
     <div className="retro-card mb-4">

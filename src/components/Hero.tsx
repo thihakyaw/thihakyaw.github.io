@@ -9,13 +9,6 @@ export default function Hero({ data }: HeroProps) {
 
   return (
     <section id="hero" className="py-12 border-b border-paper-border dark:border-terminal-border">
-      <div className="mb-2 text-xs text-paper-muted dark:text-terminal-muted">
-        <span className="text-paper-green dark:text-terminal-green">thihakyaw@portfolio</span>
-        <span>:</span>
-        <span className="text-paper-amber dark:text-terminal-amber">~</span>
-        <span>$</span>
-      </div>
-
       <h1 className="text-3xl sm:text-4xl font-bold text-paper-text dark:text-terminal-text mb-1">
         {name}
       </h1>
